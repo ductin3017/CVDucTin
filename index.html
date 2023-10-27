@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lê Đức Tín - CV TEST PUSH</title>
+  <!-- Add your preferred CSS and Bootstrap styles here -->
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS for additional styling -->
+  <link rel="stylesheet" href="custom-style.css">
+  <!-- Add your preferred fonts here -->
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap">
+  </noscript>
+  <!-- AOS Library for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <style>
+    /* Tăng độ sáng của icon Facebook và GitHub */
+.header-social .nav-link i {
+  filter: brightness(1.5); /* Điều chỉnh độ sáng, ví dụ: 1.5 là 150% */
+}
+/* Tăng kích thước và độ sáng của icon Facebook và GitHub */
+.header-social .nav-link i {
+  font-size: 30px; /* Điều chỉnh kích thước của icon, ví dụ: 24px */
+  filter: brightness(1.5); /* Điều chỉnh độ sáng, ví dụ: 1.5 là 150% */
+}
+
+
+    .section {
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+    }
+/* Loại bỏ hình nền và đặt màu nền cho cover-section */
+.cover-section {
+  background-image: none; /* Loại bỏ hình nền */
+  background-color: #079f9f; /* Đặt màu nền xanh lá cây */
+  color: #000; /* Đặt màu chữ thành màu đen */
+}
+
+/* Đặt màu cho icon xanh */
+.header-social .nav-link i {
+  color: #0e7488; /* Đặt màu xanh cho icon */
+}
+
+    /* Loại bỏ khoảng cách giữa các phần tử trong mục */
+    .section p {
+      margin: 0;
+    }
+    .section {
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    .menu-title.active {
+      font-weight: bold;
+    }
+    .cover-section .bg-image {
+        display: none; /* Loại bỏ ảnh nền */
+    }
+    .section {
+  margin: 20px; /* Giảm khoảng cách giữa các phần */
+  padding: 10px; /* Giảm padding để làm nhỏ box model */
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 10px; /* Bo góc */
+}
+/* Bỏ góc của tất cả các box model */
+.section,
+.header-bio,
+.certificate,
+.project {
+  border-radius: 5;
+}
+
+
+.section p {
+  margin: 0;
+}
+.avatar img {
+  width: 150px; /* Giảm kích thước hình ảnh avatar */
+  height: 150px;
+  border-radius: 50%; /* Bo góc hình ảnh avatar thành hình tròn */
+}
+/* Màu chữ và màu nền chính */
+body {
+  color: #333; /* Màu chữ mặc định (đen) */
+  background-color: #f7f7f7; /* Màu nền mặc định (một loại xám nhạt) */
+}
+
+/* Màu chữ và màu nền của header */
+header {
+  background-color: rgba(6, 66, 85, 0.7); /* Màu nền của header (một loại xám đậm) */
+}
+
+.site-title, .menu-title.active {
+  color: #fff; /* Màu chữ trong tiêu đề và menu đã chọn (trắng) */
+}
+
+/* Màu chữ của menu chưa chọn */
+.site-nav a {
+  color: #555; /* Màu chữ trong menu chưa chọn (một loại xám đậm hơn) */
+}
+
+/* Màu nền của các phần section */
+.section {
+  background-color: #fff; /* Màu nền của các phần (trắng) */
+}
+
+/* Màu chữ chính trong các phần section */
+.section h2 {
+  color: #333; /* Màu chữ chính trong các phần (đen) */
+}
+
+/* Màu chữ chính của mục contact */
+.section#contact {
+  color: #555; /* Màu chữ chính trong mục contact (một loại xám đậm hơn) */
+}
+/* Màu chữ của menu chưa chọn */
+.site-nav a {
+  color: #fff; /* Đổi màu chữ trong menu chưa chọn thành màu sáng (trắng) */
+}
+/* Đổi màu nền chính của trang web thành xanh lá đẹp */
+body {
+  background-color: #2ECC71;
+}
+/* Menu làm nhỏ lại */
+.site-nav ul {
+  font-size: 14px; /* Điều chỉnh kích thước phông chữ của menu */
+}
+
+.site-nav ul li {
+  margin: 0 10px; /* Điều chỉnh khoảng cách giữa các mục trong menu */
+}
+
+/* Để làm cho menu trở nên nhỏ hơn trên màn hình nhỏ, bạn có thể sử dụng media query */
+@media (max-width: 768px) {
+  .site-nav ul {
+    font-size: 12px;
+  }
+
+  .site-nav ul li {
+    margin: 0 5px;
+  }
+}
+
+
+  </style>
+</head>
+<body class="bg-light" id="top">
+  <!-- Header Section -->
+  <header class="d-print-none">
+    <div class="container text-center text-lg-left">
+      <div class="pt-4 clearfix">
+        <div class="site-nav">
+          <nav role="navigation">
+            <ul class="nav justify-content-center">
+              <li class="nav-item"><a class="nav-link active" href="#about" title="About"><span class="menu-title">Giới thiệu</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills" title="Skills"><span class="menu-title">Kỹ năng</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#certificates" title="Certificates"><span class="menu-title">Chứng chỉ</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#education" title="Education"><span class="menu-title">Học vấn</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#portfolio" title="Portfolio"><span class="menu-title">Dự án</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact" title="Contact"><span class="menu-title">Liên hệ</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-content">
+    <div class="container">
+      <div class="resume-container">
+        <!-- Cover Section -->
+        <div class="cover-section">
+          <div class="mask" style="background-color: rgba(6, 66, 85, 0.7); backdrop-filter: blur(2px);">
+            <div class="text-center p-5">
+              <div class="avatar p-1"><img class="img-thumbnail rounded-circle shadow" src="anh.jpg" width="260" height="290" />
+              </div>
+              <div class="header-bio mt-3">
+                <div data-aos="zoom-in" data-aos-delay="0">
+                  <h2 class="h1">ĐỨC TÍN</h2>
+                  <p>47.01.103.095</p>
+                </div>
+                <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="400">
+                  <nav role="navigation">
+                    <ul class="nav justify-content-center">
+                      <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/" title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a></li>
+                      <li class="nav-item"><a class="nav-link" href="https://github.com/" title="Github"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Sections (About, Skills, Certificates, Education, Portfolio, Contact) -->
+        <section id="about" class="section animated fadeIn active">
+          <h2 class="h3 mb-4">Giới thiệu</h2>
+          <p>Chào mọi người, tôi là Lê Đức Tín, một lập trình viên web chưa có kinh nghiệm. Tôi muốn tìm kiếm cơ hội để học hỏi và cải thiện kỹ năng lập trình của mình.</p>
+        </section>
+
+        <section id="skills" class="section animated fadeIn">
+          <h2 class="h3 mb-4">Kỹ năng</h2>
+          <!-- Front-end Development -->
+          <div class="front-end-section">
+            <h3 class="h6">Front-end Development</h3>
+            <ul>
+              <li>HTML
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li>CSS
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li>JavaScript
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li>React
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Back-end Development -->
+          <div class="back-end-section">
+            <h3 class="h6">Back-end Development</h3>
+            <ul>
+              <li>Node.js
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li>Python
+                <div class="progress">
+                  <div class "progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li>Express.js
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li>Python Django
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 5%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="certificates" class="section animated fadeIn">
+          <h2 class="h3 mb-4">Chứng chỉ</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="certificate">
+                <h3 class="h6">Chứng chỉ Tin Học Căn Bản</h3>
+                <p>Cấp bởi: Trung tâm Tin Học trường Đại học Sư Phạm TPHCM</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="certificate">
+                <h3 class="h6">Chứng chỉ Công Nghệ Thông Tin Cơ Bản</h3>
+                <p>Cấp bởi: Khoa công nghệ thông tin trường Đại học Sư Phạm TPHCM</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="education" class="section animated fadeIn">
+          <h2 class="h3 mb-4">Học vấn</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="h6">Tốt nghiệp Trường THPT Đốc Bình Kiều</h3>
+              <p>Năm tốt nghiệp: 2020</p>
+            </div>
+            <div class="col-md-6">
+              <h3 class="h6">Sinh viên năm 3, Đại học Sư phạm TP.HCM</h3>
+              <p>Chuyên ngành: Sư Phạm Tin Học</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="portfolio" class="section animated fadeIn">
+          <h2 class="h3 mb-4">Dự án Web</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="project">
+                <img src="pr.jpg" alt="Project 1" class="img-fluid">
+                <h3 class="h6">Project 1</h3>
+                <p>My CV</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project">
+                <img src="" alt="Project 2" class="img-fluid">
+                <h3 class="h6">Project 2</h3>
+                <p>Chưa có</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project">
+                <img src="" alt="Project 3" class="img-fluid">
+                <h3 class="h6">Project 3</h3>
+                <p>Chưa Có</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="section animated fadeIn">
+          <h2 class="h3 mb-4">Liên hệ</h2>
+          <p>Thông tin liên hệ của tôi:</p>
+          <ul>
+            <li>Email: ductin301@gmail.com</li>
+            <li>Điện thoại: 0000000000</li>
+            <li>Địa chỉ: Trường Đại học Sư phạm TP.HCM</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="pt-4 pb-4 text-muted text-center d-print-none">
+    <div class="container">
+      <div class="my-3">
+        <div class="h4">Lê Đức Tín</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Scripts -->
+  <script>
+    AOS.init({
+      duration: 1000, // Thời gian diễn ra hiệu ứng (milliseconds)
+      once: true, // Hiệu ứng chỉ chạy một lần
+    });
+
+    function showSection(sectionId) {
+      var sections = document.getElementsByClassName("section");
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].classList.remove("active");
+      }
+      document.getElementById(sectionId).classList.add("active");
+    }
+
+    var navLinks = document.getElementsByClassName("nav-link");
+    for (var i = 0; i < navLinks.length; i++) {
+      navLinks[i].addEventListener("click", function () {
+        showSection(this.getAttribute("href").substr(1));
+      });
+    }
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
